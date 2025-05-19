@@ -1,8 +1,8 @@
 # Sentinel2Analyzer_QGISplugin
-The directory contains a QGIS plugin called "sentinel2analyzer." The plugin enables users to manipulate Sentinel-2 data, compute multispectral indices, and conduct basic statistical analyses.
+The directory contains a QGIS plugin called "sentinel2analyzer". <br> The plugin enables users to manipulate Sentinel-2 data, compute multispectral indices, and conduct basic statistical analyses.
 
 # How to install
-The plugin is free to install in QGIS. 
+The plugin is free to install in QGIS. <br>
 First, download the 'sentinel2analyzer.zip' folder, then in the QGIS software go to 'Plugins' -> 'Manage and Install Plugins...' -> 'Install from ZIP', enter the local path, and lastly click the 'Install Plugin' button.
 
 # License
