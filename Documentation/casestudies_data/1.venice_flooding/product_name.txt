@@ -1,18 +1,9 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 Venice Case Study \
-\
-Download at https://browser.dataspace.copernicus.eu\
-\
-Search Criteria by Product Name\
-\
-Pre-flood image \
-S2A_MSIL2A_20191110T101241_N0500_R022_T32TQR_20230610T104312\
-\
-Post-flood image\
-S2B_MSIL2A_20191205T101309_N0500_R022_T32TQR_20230619T055056}
+Venice Case Study <br>
+Download at https://browser.dataspace.copernicus.eu <br>
+Search Criteria by Product Name <br>
+<br>
+Pre-flood image <br>
+S2A_MSIL2A_20191110T101241_N0500_R022_T32TQR_20230610T104312 <br>
+<br>
+Post-flood image<br>
+S2B_MSIL2A_20191205T101309_N0500_R022_T32TQR_20230619T055056 <br>
