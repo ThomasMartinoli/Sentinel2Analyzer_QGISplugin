@@ -27,7 +27,7 @@ hasProcessingProvider=no
 tags= Sentinel-2, Multispectral Satellite Imagery, Stacking Bands, Multispectral Indices Computation, Statistical Analysis, Change Detection
 
 homepage=https://github.com/ThomasMartinoli/Sentinel2Analyzer_QGISplugin/tree/main
-category=Plugins
+
 icon=icon.png
 
 # experimental flag
