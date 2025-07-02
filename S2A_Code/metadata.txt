@@ -6,7 +6,7 @@
 name=Sentinel-2 Analyzer
 qgisMinimumVersion=3.0
 description=The plugin allows for managing Sentinel-2 data; computing multispectral indices; and making some statistical analysis.
-version=1.0
+version=1.0.1
 author=Chiara Bottaro, Thomas Martinoli
 email=chiara.bottaro@polimi.it ; thomas.martinoli@polimi.it
 
