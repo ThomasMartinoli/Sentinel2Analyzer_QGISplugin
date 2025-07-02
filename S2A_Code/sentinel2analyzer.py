@@ -73,6 +73,7 @@ def define_band_list(self):
             band_list=[]
                         
             layer_path=None
+            name=None
             text = self.dlg.comboBox_multinput_2.currentText()
             
             if text == "":
@@ -90,7 +91,7 @@ def define_band_list(self):
                     index=i
                     position=getattr(self.dlg,f"spinBox_B{i}_3").value()
                     
-                    band_list.append((index,position,layer_path))
+                    band_list.append((index,position,name,layer_path))
                     
             # check if the band_list is valid
             band_list, message = check_band_list(band_list)
