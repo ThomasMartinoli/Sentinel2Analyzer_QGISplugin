@@ -1451,9 +1451,9 @@ class sentinel2analyzer:
     def run(self):
         """Run method that performs all the real work"""
 
-        # Create the dialog with elements (after translation) and keep reference
-        # Only create GUI ONCE in callback, so that it will only load when the plugin is started
-        if self.first_start == True:
+        # The GUI is reseted each time the pluign is closed and S2A gui starts from the begging
+        # to take trace of what was done it is necessary to revome  self.first_start == False
+        if self.first_start == True or self.first_start == False:
             self.first_start = False
             self.dlg = sentinel2analyzerDialog()
 
