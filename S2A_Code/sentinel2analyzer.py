@@ -500,7 +500,7 @@ class sentinel2analyzer:
             
     """
     Behavior of the group boxes whitin the Analysis - Masking TAB
-    if the DOISCRETE group box is checked, the CONTINUOS group box is disabled
+    if the DISCRETE group box is checked, the CONTINUOS group box is disabled
     if the CONTINUOS group box is checked, the DOISCRETE group box is disabled
     """         
     def deactivatecontinuos(self):
@@ -672,7 +672,77 @@ class sentinel2analyzer:
             self.dlg.spinBox_B15.setEnabled(False)
             self.dlg.Name_B15.setEnabled(False)
             self.dlg.ComboBox_15.setEnabled(False)
-        
+    
+    """
+    Behavior of the checkbox of bands whitin the Indeces - Input - TAB
+    if the BANDS is not checked, all relative widgets are disabled
+    """ 
+    def band1_Indeces_activation(self):
+        if self.dlg.checkBox_B1_3.isChecked():
+            self.dlg.spinBox_B1_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B1_3.setEnabled(False)
+    def band2_Indeces_activation(self):
+        if self.dlg.checkBox_B2_3.isChecked():
+            self.dlg.spinBox_B2_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B2_3.setEnabled(False)
+    def band3_Indeces_activation(self):
+        if self.dlg.checkBox_B3_3.isChecked():
+            self.dlg.spinBox_B3_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B3_3.setEnabled(False)
+    def band4_Indeces_activation(self):
+        if self.dlg.checkBox_B4_3.isChecked():
+            self.dlg.spinBox_B4_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B4_3.setEnabled(False)
+    def band5_Indeces_activation(self):
+        if self.dlg.checkBox_B5_3.isChecked():
+            self.dlg.spinBox_B5_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B5_3.setEnabled(False)
+    def band6_Indeces_activation(self):
+        if self.dlg.checkBox_B6_3.isChecked():
+            self.dlg.spinBox_B6_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B6_3.setEnabled(False)
+    def band7_Indeces_activation(self):
+        if self.dlg.checkBox_B7_3.isChecked():
+            self.dlg.spinBox_B7_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B7_3.setEnabled(False)
+    def band8_Indeces_activation(self):
+        if self.dlg.checkBox_B8_3.isChecked():
+            self.dlg.spinBox_B8_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B8_3.setEnabled(False)
+    def band9_Indeces_activation(self):
+        if self.dlg.checkBox_B9_3.isChecked():
+            self.dlg.spinBox_B9_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B9_3.setEnabled(False)
+    def band10_Indeces_activation(self):
+        if self.dlg.checkBox_B10_3.isChecked():
+            self.dlg.spinBox_B10_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B10_3.setEnabled(False)
+    def band11_Indeces_activation(self):
+        if self.dlg.checkBox_B11_3.isChecked():
+            self.dlg.spinBox_B11_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B11_3.setEnabled(False)
+    def band12_Indeces_activation(self):
+        if self.dlg.checkBox_B12_3.isChecked():
+            self.dlg.spinBox_B12_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B12_3.setEnabled(False)
+    def band13_Indeces_activation(self):
+        if self.dlg.checkBox_B13_3.isChecked():
+            self.dlg.spinBox_B13_3.setEnabled(True)
+        else:
+            self.dlg.spinBox_B13_3.setEnabled(False)
+
 
 ###################################################################################################
     """
@@ -1491,6 +1561,21 @@ class sentinel2analyzer:
             ########################################################################
             """ INDICES TAB """
             """ input """
+            # checkboxes behavior
+            self.dlg.checkBox_B1_3.toggled.connect(self.band1_Indeces_activation)
+            self.dlg.checkBox_B2_3.toggled.connect(self.band2_Indeces_activation)
+            self.dlg.checkBox_B3_3.toggled.connect(self.band3_Indeces_activation)
+            self.dlg.checkBox_B4_3.toggled.connect(self.band4_Indeces_activation)
+            self.dlg.checkBox_B5_3.toggled.connect(self.band5_Indeces_activation)
+            self.dlg.checkBox_B6_3.toggled.connect(self.band6_Indeces_activation)
+            self.dlg.checkBox_B7_3.toggled.connect(self.band7_Indeces_activation)
+            self.dlg.checkBox_B8_3.toggled.connect(self.band8_Indeces_activation)
+            self.dlg.checkBox_B9_3.toggled.connect(self.band9_Indeces_activation)
+            self.dlg.checkBox_B10_3.toggled.connect(self.band10_Indeces_activation)
+            self.dlg.checkBox_B11_3.toggled.connect(self.band11_Indeces_activation)
+            self.dlg.checkBox_B12_3.toggled.connect(self.band12_Indeces_activation)
+            self.dlg.checkBox_B13_3.toggled.connect(self.band13_Indeces_activation)
+            
             """ vegeatation """
             
             # tool buttons
