@@ -1706,7 +1706,7 @@ class sentinel2analyzer:
         
         # show the dialog
         # self.dlg.setFixedSize(self.dlg.sizeHint()) 
-        self.dlg.resize(60, 70)
+        self.dlg.resize(50, 60)
         self.dlg.show()
         # Run the dialog event loop
         result = self.dlg.exec_()

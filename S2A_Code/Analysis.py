@@ -182,7 +182,7 @@ def generate_report(input_path, output_path, report_indices):
                 fig1=plt.figure(figsize=(10, 5))
                 for i in range(num_bands):
                     data = array[i]
-                    exclude_nodata = data[data != nodata_value].ravel()                        
+                    exclude_nodata = data[(data != nodata_value) & ~np.isnan(data)].ravel()                     
                     counts, bin_edges = np.histogram(exclude_nodata, bins=100)
                     bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
                     color = colors[i % len(colors)]
@@ -201,7 +201,7 @@ def generate_report(input_path, output_path, report_indices):
                 fig, axes = plt.subplots(nrows=num_bands, figsize=(10, 3 * num_bands))
                 for i in range(num_bands):
                     data = array[i]
-                    exclude_nodata = data[data != nodata_value].ravel()
+                    exclude_nodata = data[(data != nodata_value) & ~np.isnan(data)].ravel()   
                     counts, bin_edges = np.histogram(exclude_nodata, bins=100)
                     bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
                     axes[i].plot(bin_centers, counts, color='blue')
@@ -237,7 +237,7 @@ def generate_report(input_path, output_path, report_indices):
                             
         elif num_bands == 1:
             data = array[0]
-            exclude_nodata = data[data != nodata_value].ravel()
+            exclude_nodata = data[(data != nodata_value) & ~np.isnan(data)].ravel()   
             
             # Singola banda
             if 1 in report_indices:
@@ -273,9 +273,9 @@ def generate_report(input_path, output_path, report_indices):
                 
                 # for each single value present in the array count the frequency
             unique, unique_count = np.unique(exclude_nodata, return_counts=True)
-            # if the number of unique values is greater than 20 generete an error
+            # if the number of unique values is greater than 20 generete a warning
             if len(unique) > 20:
-                QMessageBox.warning(None, "Error", "Too many unique values")
+                QMessageBox.warning(None, "Error", "Too many unique values for a discrete raster. Frequency dictionary will not be generated.")
                 frequency_dict = None
             else:
                 # create a dictionary with the unique values and their frequency
@@ -331,7 +331,7 @@ def generate_report(input_path, output_path, report_indices):
             text_lines.append("\nStatistical Information:\n")
             for i in range(num_bands):
                 data = array[i]
-                exclude_nodata = data[data != nodata_value].ravel()
+                exclude_nodata = data[(data != nodata_value) & ~np.isnan(data)].ravel()   
                 mean = np.mean(exclude_nodata)
                 variance = np.var(exclude_nodata)
                 median = np.median(exclude_nodata)
