@@ -5,12 +5,12 @@
 [general]
 name=Sentinel-2 Analyzer
 qgisMinimumVersion=3.0
-description=The plugin allows for managing Sentinel-2 data; computing multispectral indices; and making some statistical analysis.
+description = The plugin allows for managing Sentinel-2 data; computing multispectral indices; and performing some analysis.
 version=1.0.1
 author=Chiara Bottaro, Thomas Martinoli
 email=chiara.bottaro@polimi.it ; thomas.martinoli@polimi.it
 
-about=The plugin allows for managing Sentinel-2 data; computing multispectral indices; and making some statistical analysis.
+about = The S2A plugin is designed to efficiently support the exploration and analysis of Sentinel-2 satellite imagery, with the flexibility to work with other multispectral datasets at different spatial resolutions. <br><br> The plugin enables efficient data management by allowing users to generate image stacks containing only the selected bands. Stack generation can be performed in three ways: directly from a SAFE folder, from a multiband raster, or from individual single-band rasters. <br> S2A also enables the computation of multispectral indices. Several commonly used indices are included by default, and if a specific index is missing, it can be defined and calculated using the built-in calculator. <br> Additional features include mask generation and application, discretization of continuous rasters, basic statistical analysis with automated report generation, and change detection between data acquired at different times.
 
 tracker=https://github.com/ThomasMartinoli/Sentinel2Analyzer_QGISplugin/issues
 repository=https://github.com/ThomasMartinoli/Sentinel2Analyzer_QGISplugin/tree/main/S2A_Code
@@ -21,7 +21,7 @@ repository=https://github.com/ThomasMartinoli/Sentinel2Analyzer_QGISplugin/tree/
 
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
-changelog= Bugs Fixed in Indices Computation (3/07/2025)
+changelog= Bugs Fixed in Indices Computation and Report generation. <br> Improved the layout design of the Indeces Input tab.
 
 # Tags are comma separated with spaces allowed
 tags= Sentinel-2, Multispectral Satellite Imagery, Stacking Bands, Multispectral Indices Computation, Statistical Analysis, Change Detection
